@@ -1,1 +1,1 @@
-Where am i?
+project 0x00. Shell, basics
