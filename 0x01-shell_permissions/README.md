@@ -16,3 +16,8 @@ You can assume that the user betty will exist when we will run your script
 5-execute : script that adds execute permission to the owner of the file hello.
 
 6-multiple_permission : script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
+
+7-everybody : script that adds execution permission to the owner, the group owner and the other users, to the file hello
+
+The file hello will be in the working directory
+You are not allowed to use commas for this script.
