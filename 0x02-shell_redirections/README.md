@@ -21,6 +21,7 @@ You’re not allowed to use sed.
 8-cwd_state : script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
 9-duplicate_last_line : Write a script that duplicates the last line of the file iacta
+
 The file iacta will be in the working directory.
 
 10-no_more_js : script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
@@ -28,19 +29,23 @@ The file iacta will be in the working directory.
 11-directories : script that counts the number of directories and sub-directories in the current directory.
 
 The current and parent directories should not be taken into account
-Hidden directories should be counted.
+
+Hidden directories should be counted
 
 12-newest_files : script that displays the 10 newest files in the current directory.
 
 Requirements:
 
 One file per line
+
 Sorted from the newest to the oldest
 
 13-unique : Create a script that takes a list of words as input and prints only words that appear exactly once.
 
 Input format: One line, one word
+
 Output format: One line, one word
+
 Words should be sorted
 
 14-finf_that_word : Display lines containing the pattern “root” from the file /etc/passwd
@@ -68,9 +73,29 @@ Based on the the /etc/passwd file
 100-empty_casks : Write a command that finds all empty files and directories in the current directory and all sub-directories.
 
 Only the names of the files and directories should be displayed (not the entire path)
+
 Hidden files should be listed
+
 One file name per line
+
 The listing should end with a new line
+
+You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
+101-gifs : Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+
+Hidden files should be listed
+
+Only regular files (not directories) should be listed
+
+The names of the files should be displayed without their extensions
+
+The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay)
+
+One file name per line
+
+The listing should end with a new line
+
 You are not allowed to use basename, grep, egrep, fgrep or rgrep
 
 
